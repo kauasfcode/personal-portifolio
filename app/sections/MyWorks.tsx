@@ -3,7 +3,7 @@ import { ProjectCard } from "../components/ProjectCard";
 
 export default function MyWorks() {
     return (
-        <section className=" w-full bg-section py-8 px-12 rounded-md relative mx-auto">
+        <section className=" w-full bg-section py-8 px-12 rounded-md relative mx-auto" id="projects">
             <div className="mb-4">
                 <span className="text-xl text-highlight">• Projects</span>
                 <h2 className="text-2xl text-title">Meus últimos projetos</h2>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <section className="grid grid-cols-2 w-full bg-section py-8 rounded-md relative  ">
+        <section className="grid grid-cols-2 w-full bg-section py-8 rounded-md relative  " id="about">
             <div className="flex justify-center items-center">
                 <div className="relative">
                     <Image

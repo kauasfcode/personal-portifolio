@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import HeroSection from "./sections/HeroSection";
 import MySkills from "./sections/MySkills";
@@ -13,6 +14,7 @@ export default function Home() {
         <MySoftSkills/>
         <MyWorks/>
         <MySkills/>
+        <Footer/>
       </div>
     </>
   );

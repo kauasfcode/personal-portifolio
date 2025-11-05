@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ExpandableImage } from "./ExpandableImage";
 
 interface ProjectCardProps {
   image: string;
@@ -21,13 +21,7 @@ export function ProjectCard({
     <div className="grid grid-cols-2 gap-x-8 items-stretch">
         
       <div className="min-w-[500px] min-h-[500px]">
-        <Image
-          src={image}
-          alt="Project image"
-          className="rounded-md object-cover h-full w-full"
-          width={500}
-          height={500}
-        />
+          <ExpandableImage imgUrl={image}/>
       </div>
 
       <div className="space-y-4">
