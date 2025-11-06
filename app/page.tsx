@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
 
-      <div className="h-screen w-full space-y-3">
+      <div className="h-screen w-full space-y-3 ">
         <Navbar/>
         <HeroSection/>
         <MySoftSkills/>

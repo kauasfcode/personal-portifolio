@@ -6,8 +6,8 @@ import Logo from "./Logo";
 export default function Navbar() {
     return (
         <>
-            <div className="px-5 py-5 mb-2 ">
-                <div className="px-5 py-5 flex justify-between w-full bg-section rounded-lg items-center text-title font-serif relative">
+            <div className="px-5 py-5 mb-2 max-md:hidden ">
+                <div className="px-5 py-5 flex justify-between w-full bg-section rounded-lg items-center text-title font-serif relative ">
                     <div className="flex gap-2">
                         <Logo />
                         <span className=" text-lg">Kaua.Dev</span>

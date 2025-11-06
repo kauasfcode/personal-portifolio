@@ -3,8 +3,8 @@ import { SkillCard } from "../components/SkillsCard";
 
 export default function MySoftSkills() {
     return (
-        <section className="w-full bg-section py-8 rounded-md relative  ">
-            <Marquee className="py-8 text-white [--duration:20s]">
+        <section className="w-full bg-section py-8 rounded-md relative overflow-hidden  ">
+            <Marquee className="py-8 text-white [--duration:20s] overflow-hidden">
                 <div className="flex items-center gap-8 px-8">
                     <SkillCard
                         title="Aprendizado rápido."
