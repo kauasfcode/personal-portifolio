@@ -12,7 +12,7 @@ export function ExpandableImage({ imgUrl }: { imgUrl: string }) {
           alt="Preview do projeto"
           width={500}
           height={500}
-          className="rounded-md object-cover h-full w-full cursor-pointer"
+          className="   rounded-md object-cover h-[250px] w-[250px]  md:h-full md:w-full cursor-pointer"
         />
       </DialogTrigger>
 
@@ -25,7 +25,7 @@ export function ExpandableImage({ imgUrl }: { imgUrl: string }) {
           alt="Preview expandido"
           width={1200}
           height={800}
-          className="rounded-md"
+          className=""
         />
       </DialogContent>
     </Dialog>
