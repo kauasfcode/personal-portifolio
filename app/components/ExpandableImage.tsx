@@ -10,9 +10,9 @@ export function ExpandableImage({ imgUrl }: { imgUrl: string }) {
         <Image
           src={imgUrl}
           alt="Preview do projeto"
-          width={500}
-          height={500}
-          className="   rounded-md object-cover h-[250px] w-[250px]  md:h-full md:w-full cursor-pointer"
+          width={400}
+          height={400}
+          className="   rounded-md cursor-pointer"
         />
       </DialogTrigger>
 
@@ -23,8 +23,7 @@ export function ExpandableImage({ imgUrl }: { imgUrl: string }) {
         <Image
           src={imgUrl}
           alt="Preview expandido"
-          width={1200}
-          height={800}
+          layout="fill"
           className=""
         />
       </DialogContent>

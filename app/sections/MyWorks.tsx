@@ -13,7 +13,7 @@ export default function MyWorks() {
                     <CarouselContent>
                         <CarouselItem>
                             <ProjectCard
-                                image="/projects/nina_portifolio.png"
+                                image="/projects/nina.png"
                                 title="Redesign completo do e-commerce"
                                 description="Realizei o redesign completo do site, reestilizando todas as telas de acordo com um layout do Figma."
                                 company="Nina Saúde"
@@ -23,7 +23,7 @@ export default function MyWorks() {
                         </CarouselItem>
                         <CarouselItem>
                             <ProjectCard
-                                image="/projects/nina_portifolio.png"
+                                image="/projects/forum.png"
                                 title="Desenvolvimento completo de um forúm"
                                 description="Atuei no desenvolvimento do fórum oficial da WPO, organização global com presença em mais de 60 países. Participei desde a replicação fiel do layout do Figma até a implementação completa da interface, atuando em parceria com a equipe de UX e contribuindo com melhorias de usabilidade e design. Também fui responsável pelo sistema de autenticação e otimização de performance, garantindo uma experiência fluida e segura para os usuários."
                                 company="World Packaging Organization (WPO)"
@@ -33,7 +33,7 @@ export default function MyWorks() {
                         </CarouselItem>
                         <CarouselItem>
                             <ProjectCard
-                                image="/projects/nina_portifolio.png"
+                                image="/projects/purplewrite.png"
                                 title="Desenvolvimento completo de MVP com IA"
                                 description="Liderei o desenvolvimento completo do MVP de uma aplicação baseada em IA, desde o design system até o backend e integrações externas. Entreguei a primeira versão funcional em apenas 4 semanas, com autenticação completa, integração com GPTZero e sistema de pagamentos via Stripe, garantindo alta performance e experiência fluida aos usuários."
                                 company="Purplewrite"
