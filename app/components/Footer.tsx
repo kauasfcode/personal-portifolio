@@ -20,7 +20,7 @@ export default function Footer() {
                     <Image src={"/socials/github.svg"} alt="" width={24} height={24} />
                 </Link>
             </div>
-            <div className="text-lg md:text-xl text-title space-x-5">
+            <div className="text-md 2xl:text-lg md:text-xl text-title space-x-5">
                 <Link href={"#about"}>Sobre mim</Link>
                 <Link href={"#projects"}>Projetos</Link>
             </div>

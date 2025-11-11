@@ -9,7 +9,7 @@ export default function HeroSection() {
             <div className="flex justify-center items-center">
                 <div className="relative">
                     <Image
-                        src="/developer-pixelart.jpg"
+                        src="/my_picture.jpg"
                         alt="Developer pixel art"
                         className="rounded-full h-[250px] w-[250px] md:h-[500px] md:w-[500px]"
                         width={500}

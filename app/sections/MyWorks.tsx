@@ -1,6 +1,7 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext } from "@/components/ui/carousel";
 import { ProjectCard } from "../components/ProjectCard";
 
+
 export default function MyWorks() {
     return (
         <section className=" w-full bg-section py-8 px-12 rounded-md relative mx-auto overflow-hidden" id="projects">
@@ -9,7 +10,7 @@ export default function MyWorks() {
                 <h2 className="text-lg md:text-2xl text-title">Meus últimos projetos</h2>
             </div>
             <div className="flex ">
-                <Carousel className="w-full 2xl:w-[80%]">
+                <Carousel className="w-full  md:w-[90%] 2xl:w-[80%]">
                     <CarouselContent>
                         <CarouselItem>
                             <ProjectCard
@@ -19,6 +20,7 @@ export default function MyWorks() {
                                 company="Nina Saúde"
                                 role="Desenvolvedor Frontend"
                                 technologies="Next.js, React, ShadcnUi, TailwindCSS, Git"
+                                href="https://ninasaude.com.br/"
                             />
                         </CarouselItem>
                         <CarouselItem>
@@ -29,6 +31,7 @@ export default function MyWorks() {
                                 company="World Packaging Organization (WPO)"
                                 role="Desenvolvedor fullstack"
                                 technologies="Next.js, React, Nest, ShadcnUi, TailwindCSS, Git, Docker"
+                                underMaintence={true}
                             />
                         </CarouselItem>
                         <CarouselItem>
@@ -39,19 +42,9 @@ export default function MyWorks() {
                                 company="Purplewrite"
                                 role="Desenvolvedor fullstack"
                                 technologies="Next.js, React, Firebase, TailwindCSS, Git, Vercel"
+                                href="https://www.purplewrite.com/"
                             />
                         </CarouselItem>
-                        <CarouselItem>
-                            <ProjectCard
-                                image="/projects/nina_portifolio.png"
-                                title="Criação de site institucional"
-                                description="Desenvolvi o site institucional da empresa, cuidando de toda a estrutura, personalização de tema e otimização. Criei uma interface responsiva e leve, aplicando boas práticas de UX e copywriting para destacar a marca e aumentar o engajamento, fortalecendo a presença digital da clínica no setor médico."
-                                company="BHEndoscopy"
-                                role="Web designer"
-                                technologies="Wordpress"
-                            />
-                        </CarouselItem>
-
                     </CarouselContent>
                     <CarouselNext />
                 </Carousel>

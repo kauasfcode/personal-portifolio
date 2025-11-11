@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ExpandableImage } from "./ExpandableImage";
-
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
+import VisitWebsite from "./VisitWebsite";
 interface ProjectCardProps {
   image: string;
   title: string;
@@ -8,27 +10,29 @@ interface ProjectCardProps {
   company: string;
   role: string;
   technologies: string;
-  link?: string;
+  href?: string;
+  underMaintence?: boolean
 }
 
 export function ProjectCard({
   image,
   title,
-  link,
+  href="manutenção",
   description,
   company,
   role,
   technologies,
+  underMaintence = false
 }: ProjectCardProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:items-stretch ">
-        
+
       <div className="md:min-w-[500px] md:min-h-[500px] mb-4 md:mb-0">
-          <ExpandableImage imgUrl={image}/>
+        <ExpandableImage imgUrl={image} />
       </div>
 
       <div className="space-y-2 md:space-y-4">
-        <div className="space-y-2">
+        <div className="space-y-2 ">
           <h3 className="text-highlight text-lg md:text-xl font-semibold">{title}</h3>
           <p className="text-zinc-300">{description}</p>
         </div>
@@ -38,7 +42,7 @@ export function ProjectCard({
         <div className="flex flex-col text-sm md:text-[16px] 2xl:text-lg">
           <div className="flex flex-col md:flex-row gap-2 justify-between text-title border-b border-gray-700 py-2">
             <span>Empresa</span>
-            {link ? (<Link href={""} className="text-highlight md:text-title ">{company}</Link>) : <span className="text-highlight md:text-title ">{company}</span> }
+            <span className="text-highlight md:text-title ">{company}</span>
           </div>
           <div className="flex flex-col md:flex-row  gap-2 justify-between text-title  border-b border-gray-700 py-2">
             <span>Cargo no projeto</span>
@@ -48,7 +52,9 @@ export function ProjectCard({
             <span>Tecnologias</span>
             <span className="text-highlight md:text-title ">{technologies}</span>
           </div>
+
         </div>
+       <VisitWebsite href={href} underMaintence={underMaintence}/>
       </div>
     </div>
   );
