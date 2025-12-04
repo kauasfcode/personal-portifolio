@@ -1,6 +1,16 @@
 import { Toaster } from "sonner";
 import "./globals.css";
 
+
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kauã Felício — Desenvolvedor Full Stack",
+  description: "Portifolio de desenvolvedor para expor meus conhecimentos e experiências.",
+};
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
